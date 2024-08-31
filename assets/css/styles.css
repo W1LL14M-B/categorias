@@ -1,0 +1,79 @@
+.text-1 {
+	font-size: 22px; /* Cambié 'size' por 'font-size' y '22x' por '22px' */
+	color: #222;
+  }
+  
+  .text-2 {
+	font-size: 14px; /* Cambié 'size' por 'font-size' y '14x' por '14px' */
+	color: #4a5568;
+  }
+  
+  .img-1 {
+	width: 18px;
+	height: 23px;
+  }
+  
+  .icon-wrapper {
+	display: flex;
+	flex-wrap: wrap; /* Ajusta los íconos a la línea siguiente si hay demasiado espacio */
+	justify-content: space-around; /* Cambia a 'space-around' o 'space-evenly' según tus necesidades */
+	align-items: center; /* Alinea verticalmente los íconos y el texto */
+  }
+  
+  .icon-wrapper .icon {
+	display: flex;
+	flex-direction: column; /* Coloca el ícono y el texto en columna */
+	align-items: center; /* Centra el ícono y el texto horizontalmente */
+	margin: 10px; /* Ajusta el margen entre íconos según tus necesidades */
+  }
+  
+  .icon-wrapper svg {
+	margin-bottom: 5px; /* Ajusta el margen entre el ícono y el texto */
+  }
+  
+  .icon-wrapper p {
+	margin: 0; /* Elimina el margen superior predeterminado */
+	font-size: 14px; /* Asegúrate de que el tamaño de fuente sea apropiado */
+	color: #4a5568; /* Puedes ajustar el color del texto según sea necesario */
+  }
+  
+  /* Media queries para ajustar el diseño en diferentes tamaños de pantalla */
+  @media (max-width: 768px) {
+	.text-1 {
+	  font-size: 18px; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+	}
+  
+	.text-2 {
+	  font-size: 12px; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+	}
+  
+	.img-1 {
+	  width: 16px; /* Ajusta el tamaño de las imágenes para pantallas más pequeñas */
+	  height: 20px;
+	}
+  
+	.icon-wrapper {
+	  flex-direction: column; /* Cambia a columna en pantallas más pequeñas para evitar el desbordamiento horizontal */
+	  align-items: flex-start; /* Ajusta la alineación en pantallas pequeñas */
+	}
+  }
+  
+  @media (max-width: 480px) {
+	.text-1 {
+	  font-size: 16px; /* Ajusta aún más el tamaño de fuente */
+	}
+  
+	.text-2 {
+	  font-size: 10px; /* Ajusta aún más el tamaño de fuente */
+	}
+  
+	.img-1 {
+	  width: 14px; /* Ajusta el tamaño de las imágenes para pantallas muy pequeñas */
+	  height: 18px;
+	}
+  
+	.icon-wrapper {
+	  margin: 0; /* Ajusta el margen para pantallas muy pequeñas */
+	}
+  }
+  
