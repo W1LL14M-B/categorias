@@ -1,10 +1,10 @@
 .text-1 {
-	font-size: 22px; /* Cambié 'size' por 'font-size' y '22x' por '22px' */
+	font-size: 22px; 
 	color: #222;
   }
   
   .text-2 {
-	font-size: 14px; /* Cambié 'size' por 'font-size' y '14x' por '14px' */
+	font-size: 14px; 
 	color: #4a5568;
   }
   
@@ -15,65 +15,90 @@
   
   .icon-wrapper {
 	display: flex;
-	flex-wrap: wrap; /* Ajusta los íconos a la línea siguiente si hay demasiado espacio */
-	justify-content: space-around; /* Cambia a 'space-around' o 'space-evenly' según tus necesidades */
-	align-items: center; /* Alinea verticalmente los íconos y el texto */
+	flex-wrap: wrap; 
+	justify-content: space-around; 
+	align-items: center; 
   }
   
   .icon-wrapper .icon {
 	display: flex;
-	flex-direction: column; /* Coloca el ícono y el texto en columna */
-	align-items: center; /* Centra el ícono y el texto horizontalmente */
-	margin: 10px; /* Ajusta el margen entre íconos según tus necesidades */
+	flex-direction: column; 
+	align-items: center; 
+	margin: 10px;
   }
   
   .icon-wrapper svg {
-	margin-bottom: 5px; /* Ajusta el margen entre el ícono y el texto */
+	margin-bottom: 5px; 
   }
   
   .icon-wrapper p {
-	margin: 0; /* Elimina el margen superior predeterminado */
-	font-size: 14px; /* Asegúrate de que el tamaño de fuente sea apropiado */
-	color: #4a5568; /* Puedes ajustar el color del texto según sea necesario */
+	margin: 0; 
+	font-size: 14px; 
+	color: #4a5568; 
+  }
+
+  .icon-box {
+	display: inline-block;
+	padding: 10px;
+	margin: 5px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	text-align: center;
+  }
+
+
+  .icon-box {
+	display: inline-block;
+	padding: 20px;
+	margin: 10px;
+	background-color: #f7f8f9; 
+	border-radius: 8px; 
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+	transition: box-shadow 0.3s ease; 
+  }
+  
+  .icon-box:hover {
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
   }
   
   /* Media queries para ajustar el diseño en diferentes tamaños de pantalla */
+  
   @media (max-width: 768px) {
 	.text-1 {
-	  font-size: 18px; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+	  font-size: 18px; 
 	}
   
 	.text-2 {
-	  font-size: 12px; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
+	  font-size: 12px; 
 	}
   
 	.img-1 {
-	  width: 16px; /* Ajusta el tamaño de las imágenes para pantallas más pequeñas */
+	  width: 16px; 
 	  height: 20px;
 	}
   
 	.icon-wrapper {
-	  flex-direction: column; /* Cambia a columna en pantallas más pequeñas para evitar el desbordamiento horizontal */
-	  align-items: flex-start; /* Ajusta la alineación en pantallas pequeñas */
+	  flex-direction: column; 
+	  align-items: flex-start; 
 	}
   }
   
   @media (max-width: 480px) {
 	.text-1 {
-	  font-size: 16px; /* Ajusta aún más el tamaño de fuente */
+	  font-size: 16px; 
 	}
   
 	.text-2 {
-	  font-size: 10px; /* Ajusta aún más el tamaño de fuente */
+	  font-size: 10px; 
 	}
   
 	.img-1 {
-	  width: 14px; /* Ajusta el tamaño de las imágenes para pantallas muy pequeñas */
+	  width: 14px; 
 	  height: 18px;
 	}
   
 	.icon-wrapper {
-	  margin: 0; /* Ajusta el margen para pantallas muy pequeñas */
+	  margin: 0; 
 	}
   }
   
