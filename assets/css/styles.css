@@ -9,8 +9,9 @@
   }
   
   .img-1 {
-	width: 18px;
+	width: 16px;
 	height: 23px;
+	
   }
   
   .icon-wrapper {
@@ -18,7 +19,7 @@
 	flex-wrap: wrap; 
 	justify-content: space-around; 
 	align-items: center; 
-  }
+  } 
   
   .icon-wrapper .icon {
 	display: flex;
@@ -35,34 +36,34 @@
 	margin: 0; 
 	font-size: 14px; 
 	color: #4a5568; 
-  }
-
-  .icon-box {
-	display: inline-block;
-	padding: 10px;
-	margin: 5px;
-	border: 1px solid #ddd;
-	border-radius: 5px;
-	text-align: center;
-  }
+  } 
 
 
   .icon-box {
 	display: inline-block;
-	padding: 20px;
-	margin: 10px;
+	padding: 55px;
+	margin: 0px;
 	background-color: #f7f8f9; 
 	border-radius: 8px; 
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 	transition: box-shadow 0.3s ease; 
-  }
-  
+  } 
+
   .icon-box:hover {
 	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
   }
+
+  .parrafo {
+	padding-top: 35px;
+  }
+
+  .iconouno {
+	padding-top: -7px;
+  }
+
   
   /* Media queries para ajustar el diseño en diferentes tamaños de pantalla */
-  
+
   @media (max-width: 768px) {
 	.text-1 {
 	  font-size: 18px; 
